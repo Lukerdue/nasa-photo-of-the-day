@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+body{
+  background-color: navy;
+  color: white;
+}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +39,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+.video{
+  position: relative;
+  max-width: 100%;
+
+}
+.pictureWrapper{
+  background-color: dodgerblue;
+  width: 50%;
+  padding: 3%;
+  margin: 5%;
+  border-radius: 45px;
+}
+.caption{
+  display: flex;
+  justify-content: space-around;
+}
+.main{
+  display: flex;
+}
+.desc{
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  border-radius: 100%;
+}
+.desc p{
+  padding: 10%;
+  margin: 4%;
 }

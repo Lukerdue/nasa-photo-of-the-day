@@ -4,7 +4,7 @@ function Description(props){
     const {explain} = props;
 
     return(
-        <div>
+        <div className='desc'>
             <p>{explain}</p>
         </div>
     )

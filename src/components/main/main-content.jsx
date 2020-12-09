@@ -17,7 +17,7 @@ function MainContent (){
     }, [])
 
     return(
-    <div>
+    <div className="main">
         <PictureWrapper props={photo}/>
         <Description explain={photo.explanation}/>
     </div>
