@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import ReactPlayer from 'react-player';
-import Description from './description'
+import Description from './description';
+import PictureWrapper from './picture/pictureWrapper'
 
 function MainContent (){
     const [photo, setPhoto] = useState({})
@@ -18,7 +18,7 @@ function MainContent (){
 
     return(
     <div>
-        <ReactPlayer url={photo.url}/>
+        <PictureWrapper props={photo}/>
         <Description explain={photo.explanation}/>
     </div>
     )
