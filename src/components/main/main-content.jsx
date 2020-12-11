@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Description from './description';
-import PictureWrapper from './picture/pictureWrapper'
+import PictureWrapper from './picture/pictureWrapper';
+import styled from 'styled-components';
 
 function MainContent (){
     const [photo, setPhoto] = useState({})
@@ -17,10 +18,14 @@ function MainContent (){
     }, [])
 
     return(
-    <div className="main">
+    <Main>
         <PictureWrapper props={photo}/>
         <Description explain={photo.explanation}/>
-    </div>
+    </Main>
     )
 }
 export default MainContent;
+
+const Main = styled.div`
+display: flex;
+`
